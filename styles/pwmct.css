@@ -30,6 +30,10 @@ article div p {
 article img {
   width: 200px;
 }
-body { font-family: "Architects+Daughter", sans-serif; }
+#result {
+  width: 100%; text-align: center; color: red;
+  font: normal normal normal xx-large "Permanent Marker", serif;
+}
+body { font-family: "Architects+Daughter", sans-serif; display: none; }
 h1, h2 { font-family: "Permanent Marker", serif;}
 footer { font-size: small; border-top: thin solid gray; }

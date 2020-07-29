@@ -8,12 +8,12 @@
     <script type="text/javascript" src="scripts/pwmct.js"></script>
     <title>Person Woman Man Camera TV</title>
   </head>
-  <body>
+  <body onload="return onLoad();">
     <main>
       <h1>&lsquo;Acuity&rsquo; Test</h1>
       <section>
         <h2>Naming</h2>
-        <form>
+        <form id="form" onsubmit="return show('You aced it!', 'result');">
           <article id="question-1">
             <div>
               <p>1. Name this animal.</p>
@@ -23,7 +23,7 @@
               <span><input type="radio" name="item-1" value="camera"> <label>Camera</label></span>
               <span><input type="radio" name="item-1" value="tv"> <label>TV</label></span>
             </div>
-            <a href="doc/moca-test-english_7_1.pdf" title="FACE VELVET CHURCH DAISY RED"><img src="images/moca-lion.png" alt="moca lion"></a>
+            <a href="https://psb-david-petty.github.io/pwmct/doc/moca-test-english_7_1.pdf" title="FACE VELVET CHURCH DAISY RED"><img src="https://psb-david-petty.github.io/pwmct/images/moca-lion.png" alt="moca lion"></a>
           </article>
           <article id="question-2">
             <div>
@@ -34,7 +34,7 @@
               <span><input type="radio" name="item-2" value="camera"> <label>Camera</label></span>
               <span><input type="radio" name="item-2" value="tv"> <label>TV</label></span>
             </div>
-            <a href="doc/moca-test-english_7_1.pdf" title="FACE VELVET CHURCH DAISY RED"><img src="images/moca-rhino.png" alt="moca rhino"></a>
+            <a href="https://psb-david-petty.github.io/pwmct/doc/moca-test-english_7_1.pdf" title="FACE VELVET CHURCH DAISY RED"><img src="https://psb-david-petty.github.io/pwmct/images/moca-rhino.png" alt="moca rhino"></a>
           </article>
           <article id="question-3">
             <div>
@@ -45,7 +45,7 @@
               <span><input type="radio" name="item-3" value="camera"> <label>Camera</label></span>
               <span><input type="radio" name="item-3" value="tv"> <label>TV</label></span>
             </div>
-            <a href="doc/moca-test-english_7_1.pdf" title="FACE VELVET CHURCH DAISY RED"><img src="images/moca-camel.png" alt="moca camel"></a>
+            <a href="https://psb-david-petty.github.io/pwmct/doc/moca-test-english_7_1.pdf" title="FACE VELVET CHURCH DAISY RED"><img src="https://psb-david-petty.github.io/pwmct/images/moca-camel.png" alt="moca camel"></a>
           </article>
           <article id="question-4">
             <div>
@@ -56,7 +56,7 @@
               <span><input type="radio" name="item-4" value="camera"> <label>Camera</label></span>
               <span><input type="radio" name="item-4" value="tv"> <label>TV</label></span>
             </div>
-            <a href="doc/moca-test-english_7.2.pdf" title="TRUCK BANANA VIOLIN DESK GREEN"><img src="images/moca-giraffe.png" alt="moca giraffe"></a>
+            <a href="https://psb-david-petty.github.io/pwmct/doc/moca-test-english_7.2.pdf" title="TRUCK BANANA VIOLIN DESK GREEN"><img src="https://psb-david-petty.github.io/pwmct/images/moca-giraffe.png" alt="moca giraffe"></a>
           </article>
           <article id="question-5">
             <div>
@@ -67,7 +67,7 @@
               <span><input type="radio" name="item-5" value="camera"> <label>Camera</label></span>
               <span><input type="radio" name="item-5" value="tv"> <label>TV</label></span>
             </div>
-            <a href="doc/moca-test-english_7.2.pdf" title="TRUCK BANANA VIOLIN DESK GREEN"><img src="images/moca-bear.png" alt="moca bear"></a>
+            <a href="https://psb-david-petty.github.io/pwmct/doc/moca-test-english_7.2.pdf" title="TRUCK BANANA VIOLIN DESK GREEN"><img src="https://psb-david-petty.github.io/pwmct/images/moca-bear.png" alt="moca bear"></a>
           </article>
           <article id="question-6">
             <div>
@@ -78,8 +78,9 @@
               <span><input type="radio" name="item-6" value="camera"> <label>Camera</label></span>
               <span><input type="radio" name="item-6" value="tv"> <label>TV</label></span>
             </div>
-            <a href="doc/moca-test-english_7.2.pdf" title="TRUCK BANANA VIOLIN DESK GREEN"><img src="images/moca-hippo.png" alt="moca hippo"></a>
+            <a href="https://psb-david-petty.github.io/pwmct/doc/moca-test-english_7.2.pdf" title="TRUCK BANANA VIOLIN DESK GREEN"><img src="https://psb-david-petty.github.io/pwmct/images/moca-hippo.png" alt="moca hippo"></a>
           </article>
+          <input type="submit" value="Check your &lsquo;acuity&rsquo;"> <span id="result">&nbsp;</span>
         </form>
       </section>
       <section>
