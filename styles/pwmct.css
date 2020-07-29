@@ -30,6 +30,12 @@ article div p {
 article img {
   width: 200px;
 }
+form p {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 #result {
   width: 100%; text-align: center; color: red;
   font: normal normal normal xx-large "Permanent Marker", serif;
