@@ -32,3 +32,4 @@ article img {
 }
 body { font-family: "Architects+Daughter", sans-serif; }
 h1, h2 { font-family: "Permanent Marker", serif;}
+footer { font-size: small; border-top: thin solid gray; }
