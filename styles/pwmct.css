@@ -1,0 +1,34 @@
+/*
+ * CSS for pwmct.html
+ */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 32%;
+  min-width: 400px;
+}
+div span, div p {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+article div p {
+  min-width: 200px;
+}
+article img {
+  width: 200px;
+}
+body { font-family: "Architects+Daughter", sans-serif; }
+h1, h2 { font-family: "Permanent Marker", serif;}
