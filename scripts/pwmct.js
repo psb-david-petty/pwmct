@@ -1,10 +1,10 @@
 /*
- * pwmct.js								// person woman man camera tv
+ * pwmct.js                             // person woman man camera tv
  *
  * Define two functions: onLoad() and show(message, id).
  * - onLoad() collects anchor and image information, shuffles it, and rewrites
  *   it so there will be a different 'acuity' test each time.
- * - show(message, id) sets the innerHTML of element matching id to mewssage.
+ * - show(message, id) sets the innerHTML of element matching id to message.
  */
 
 /* https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -42,10 +42,10 @@ function onLoad() {
     let questions = new Array();
     let article = 'article';
 
-	/* Collect id and then information from children of article. */
+    /* Collect id and then information from children of article. */
     for (let node of document.querySelectorAll(article)) {
-	    ids.push(node.id);				// save article ids in order
-        let question = new Object();	// create new question object
+        ids.push(node.id);              // save article ids in order
+        let question = new Object();    // create new question object
         question.id = node.id;
         /* Get <a href= for question.id. */
         selector = `#${node.id} a`;
@@ -63,44 +63,44 @@ function onLoad() {
         selector = `#${node.id} img`;
         if (document.querySelector(selector))
             question.alt = document.querySelector(selector).alt;
-        questions.push(question);		// save question in questions
+        questions.push(question);       // save question in questions
     }
 
     console.log(shuffle(questions));    // shuffle questions in place
 
-	/* Rewrite information from children of article in new order. */
+    /* Rewrite information from children of article in new order. */
     for (let [index, id] of ids.entries()) {
         /* Set <a href= for question.id. */
         selector = `#${id} a`;
         if (document.querySelector(selector))
-			document.querySelector(selector).href
-				= questions[index].href;
+            document.querySelector(selector).href
+                = questions[index].href;
         /* Set <a title= for question.id. */
         selector = `#${id} a`;
         if (document.querySelector(selector))
-			document.querySelector(selector).title
-				= questions[index].title;
+            document.querySelector(selector).title
+                = questions[index].title;
         /* Set <img src= for question.id. */
         selector = `#${id} img`;
         if (document.querySelector(selector))
-			document.querySelector(selector).src
-				= questions[index].src;
+            document.querySelector(selector).src
+                = questions[index].src;
         /* Set <img alt= for question.id. */
         selector = `#${id} img`;
         if (document.querySelector(selector))
-			document.querySelector(selector).alt
-				= questions[index].alt;
+            document.querySelector(selector).alt
+                = questions[index].alt;
     }
 
-	/* Set body { display: block; } */
-	document.querySelector('body').style.display = 'block';
-	return false;
+    /* Set body { display: block; } */
+    document.querySelector('body').style.display = 'block';
+    return false;
 }
 
 /* Set innerHTML of id to message.
  */
 function show(message, id) {
-	let selector = `#${id}`;
+    let selector = `#${id}`;
     if (document.querySelector(selector))
         document.querySelector(selector).innerHTML = message;
     console.log(`selector "${selector}" has innerHTML "${message}"`);
@@ -114,7 +114,8 @@ function show(message, id) {
 function logHTML(selector) {
     let node = document.querySelector(selector);
     if (node) {
-        console.log(`querySelector('${selector}').innerHTML="${node.innerHTML}"`);
+        console.log(`querySelector('${selector}')
+            .innerHTML="${node.innerHTML}"`);
     }
 }
 
