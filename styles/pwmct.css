@@ -1,6 +1,8 @@
 /*
  * CSS for pwmct.html
  */
+
+/* display: flex; code */
 figure {
   display: flex;
   flex-direction: column;
@@ -36,10 +38,10 @@ form p {
   flex-direction: row;
   align-items: center;
 }
-#result {
-  width: 100%; text-align: center; color: red;
-  font: normal normal normal xx-large "Permanent Marker", serif;
-}
-body { font-family: "Architects+Daughter", sans-serif; display: none; }
+
+/* Display code. */
+body { padding: 0 2%; background-color: ghostwhite; display: none; }
+body { font-family: "Architects+Daughter", sans-serif; }	/* not used */
 h1, h2 { font-family: "Permanent Marker", serif;}
 footer { font-size: x-small; border-top: thin solid gray; }
+.single-digit { padding-left: 1ch; }	/* to space single-digit questions */
