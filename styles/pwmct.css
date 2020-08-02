@@ -42,7 +42,7 @@ form p {
 
 /* Display code. */
 body { padding: 0 2%; background-color: ghostwhite; display: none; }
-body { font-family: "Architects+Daughter", sans-serif; }	/* not used */
+body { font-family: "Roboto Condensed", sans-serif; }
 h1, h2 { font-family: "Permanent Marker", serif;}
 footer { font-size: x-small; border-top: thin solid gray; }
 div p span, div span span { width: 3ch; } /* to line up question responses */
