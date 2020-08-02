@@ -30,11 +30,11 @@ function shuffle(array) {
   return array;
 }
 
-/* Collect elements of selector that match children of <article id=:
- * <a href=
- * <a title=
- * <img src=
- * <img alt=
+/* Collect elements of selector that match <article id= children as follows:
+ *  <a href=
+ *  <a title=
+ *  <img src=
+ *  <img alt=
  * ...then shuffle them and rewrite them in order of article ids.
  *
  * The format of an example article question is:
@@ -48,9 +48,7 @@ function shuffle(array) {
     </article>
  */
 function onLoad() {
-    let ids = new Array();
-    let questions = new Array();
-    let article = 'article';
+    let article = 'article', ids = new Array(), questions = new Array();
 
     /* Collect id and then information from children of article. */
     for (let node of document.querySelectorAll(article)) {
