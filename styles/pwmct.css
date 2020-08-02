@@ -19,15 +19,12 @@ article {
   flex-direction: row;
   align-items: center;
   width: 32%;
-  min-width: 400px;
+  min-width: 420px;                       /* 220 is minimum width for text */
 }
 div span, div p {
   display: flex;
   flex-direction: row;
   justify-content: left;
-}
-article div p {
-  min-width: 200px;
 }
 article { z-index: 1; }
 article img, #seal img {
