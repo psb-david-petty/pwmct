@@ -47,7 +47,7 @@ h1, h2 { font-family: "Permanent Marker", serif;}
 footer { font-size: x-small; border-top: thin solid gray; }
 input { margin-right: 3ch; }    /* to line up question responses */
 .number { width: 3ch; }         /* to line up question numbers  */
-#seal { position: absolute; top: 0; right: 2.5%; margin: 0; }
+#seal { position: absolute; top: 0; right: 2.5%; margin: 0; display: none; }
 #result {
   width: 100%; text-align: center; color: red;
   font: normal normal normal xx-large "Permanent Marker", serif;

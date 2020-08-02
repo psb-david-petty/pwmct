@@ -101,18 +101,28 @@ function onLoad() {
                 = questions[index].alt;
     }
 
-    /* Set body { display: block; } */
-    document.querySelector('body').style.display = 'block';
+    display('body', 'block');           // set body { display: block; }
     return false;
 }
 
-/* Set innerHTML of id to message.
+/* Set selector .innerHTML to message.
  */
-function show(message, id) {
-    let selector = `#${id}`;
-    if (document.querySelector(selector))
+function show(selector, message) {
+    if (document.querySelector(selector)) {
         document.querySelector(selector).innerHTML = message;
-    console.log(`selector "${selector}" has innerHTML "${message}"`);
+        console.log(`querySelector("${selector}").innerHTML = "${message}"`);
+    }
+    return false;
+}
+
+/*
+ * Set selector .style.display to value.
+ */
+function display(selector, value) {
+    if (document.querySelector(selector)) {
+        document.querySelector(selector).style.display = value;
+        console.log(`querySelector("${selector}").style.display = "${value}"`);
+    }
     return false;
 }
 
