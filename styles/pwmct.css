@@ -29,6 +29,7 @@ div span, div p {
 article div p {
   min-width: 200px;
 }
+article { z-index: 1; }
 article img, #seal img {
   width: 200px;
 }
