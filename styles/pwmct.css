@@ -13,20 +13,21 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
 }
 article {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 32%;
-  min-width: 420px;                       /* 220 is minimum width for text */
+  justify-content: space-around;
+  min-width: 40ch;                      /* 40ch - 200px is text min-width */
 }
 div span, div p {
   display: flex;
   flex-direction: row;
   justify-content: left;
 }
-article { z-index: 1; }
+article { z-index: 1; border: thin solid red; }
 article img, #seal img {
   width: 200px;
 }
