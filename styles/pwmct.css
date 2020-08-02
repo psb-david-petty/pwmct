@@ -8,34 +8,23 @@ figure {
   flex-direction: column;
   align-items: center;
 }
-form {
+form, article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
-article {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  min-width: 40ch;                      /* 40ch - 200px is text min-width */
-}
 div span, div p {
   display: flex;
   flex-direction: row;
   justify-content: left;
 }
-article { z-index: 1; border: thin solid red; }
-article img, #seal img {
-  width: 200px;
-}
-form p {
-  width: 100%;
+form > p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 
 /* Display code. */
@@ -43,6 +32,11 @@ body { padding: 0 2%; background-color: ghostwhite; display: none; }
 body { font-family: "Roboto Condensed", sans-serif; }
 h1, h2 { font-family: "Permanent Marker", serif;}
 footer { font-size: x-small; border-top: thin solid gray; }
+article {
+  min-width: 40ch;                      /* 40ch - 200px is text min-width */
+  z-index: 1;                           /* so imgs will be on top */
+}
+article img, #seal img { width: 200px; }
 div p span, div span span { width: 3ch; } /* to line up question responses */
 #seal { position: absolute; top: 0; right: 2.5%; margin: 0; display: none; }
 #result {
